@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const MoreButton = (props) => {
-    return <button onClick={/* Fill me in! */ null}>
-            More sushi!
-          </button>
-}
+  return (
+    <button onClick={() => props.nextFourItems(props.lastItemId)}>
+      More sushi!
+    </button>
+  );
+};
 
-export default MoreButton
+export default MoreButton;
